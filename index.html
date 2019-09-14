@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Say Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>SAY HELLO*</h1>
+    <form id = "form" name = "myForm" action="https://say-hello.glitch.me/form-handler.html" method="get">
+      <label for="firstname">Name:</label>
+      <div class="name">
+        <input type="text" name="firstname" placeholder="First">
+        <input type="text" name="lastname" placeholder="Last">
+      </div>
+      <label for="email">Contact Information:</label>
+      <div class="contact-info">
+        <input id="email" name="email" type="text" placeholder="Email">
+        <input type="text" name="phone" placeholder="Phone">
+      </div>
+      <div id="email-error"></div>
+      <label for="company">Company:</label>
+      <div class="company">
+        <input type="text" name="company" maxlength="30">
+      </div>
+      <label for="comment">Comment:</label>
+      <div class="comment">
+        <textarea id="comment" name="comment"></textarea>
+      </div>
+      <div id="comment-error"></div>
+      <div class="button">
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+    
+    <p>
+      *This page's form data will be passed through the URl using the GET method upon submission.
+    </p>
+    
+    <div class="footer">
+      <p>Made on <a href="https://glitch.com/">glitch.com</a> by <a href="reganwillis-softwaredeveloper.com">Regan Willis</a></p>
+      <p>view <a href ="#">README</a></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
