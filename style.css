@@ -1,0 +1,108 @@
+body {
+  background-color: #5cdb95;
+  padding-left: 10px;
+  font-family: Impact, Charcoal, sans-serif;
+  margin: 2em;
+}
+h1 {
+  color: #05386b;
+  font-style: italic;
+}
+h2 {
+  color: #05386b;
+  font-size: 20px;
+  margin-top: 5px;
+}
+form {
+  background-color: #5cdb95;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  max-width: 600px;
+}
+label {
+  color: #05386b;
+  font-size: 20px;
+  margin-top: 5px;
+}
+input[type=text], textarea {
+  border: none;
+  border: 2px solid #edf5e1;
+  background-color: #5cdb95;
+  color: #05386b;
+  width: 100%;
+  padding: 0;
+  margin: 5px;
+  margin-left: 0;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #8ee4af;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: flex-end;
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  background-color: #05386b;
+  color: #edf5e1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #8ee4af;
+  color: #05386b;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+::placeholder {
+  color: #379683;
+}
+p {
+  color: #05386b;
+  font-size: 15px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+#email-error, #comment-error {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Lucida Console", Monaco, monospace;
+  margin-bottom: 5px;
+}
+.response {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.response h2 {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+.response p {
+  color: #edf5e1;
+  padding-top: 0;
+  margin-top: 0;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer p {
+  margin: 2px;
+  color: #edf5e1;
+}
+.footer p a {
+  color: #05386b;
+}
